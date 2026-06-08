@@ -2,16 +2,21 @@
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
-## Changelog
+## `test` Lightning Web Component
 
-### v2 — `test` LWC update
+This project contains a minimal LWC located at `force-app/main/default/lwc/test/`. It renders static text inside an SLDS box and is exposed to App, Record, and Home pages.
 
-- **`test` LWC**: The component template now renders `test case` instead of `test`. This is the only functional change; the component's JavaScript and metadata configuration are unchanged.
-- **Why**: Updated the displayed text to reflect a more descriptive label.
+### Changelog
 
-### v1 — Initial commit
+**v2 (current)**
 
-- Initial SFDX project scaffolding plus the `test` Lightning web component, which originally rendered `test`. The component is exposed to App, Record, and Home pages and targets API v66.0 to match the org.
+- **Display text:** changed from `test` to `test case` in `test.html`.
+- **API version:** lowered from `67.0` to `66.0` in `test.js-meta.xml` and in `sfdx-project.json` (`sourceApiVersion`) so the component deploys to the target org, which supports a maximum API version of 66.0.
+
+**v1 (initial)**
+
+- Created the `test` LWC bundle (`test.html`, `test.js`, `test.js-meta.xml`) displaying the text `test` at API version 67.0.
+
 
 ## How Do You Plan to Deploy Your Changes?
 
