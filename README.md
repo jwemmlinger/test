@@ -2,6 +2,17 @@
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
 
+## Changelog
+
+### v2 — `test` LWC update
+
+- **`test` LWC**: The component template now renders `test case` instead of `test`. This is the only functional change; the component's JavaScript and metadata configuration are unchanged.
+- **Why**: Updated the displayed text to reflect a more descriptive label.
+
+### v1 — Initial commit
+
+- Initial SFDX project scaffolding plus the `test` Lightning web component, which originally rendered `test`. The component is exposed to App, Record, and Home pages and targets API v66.0 to match the org.
+
 ## How Do You Plan to Deploy Your Changes?
 
 Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
